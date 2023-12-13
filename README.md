@@ -1,47 +1,36 @@
-# search_engines  
-A Python library that queries Google, Bing, Yahoo and other search engines and collects the results from multiple search engine results pages.  
-Please note that web-scraping may be against the TOS of some search engines, and may result in a temporary ban.
+# 🚀 Enhanced Search Engines Library
 
-## Supported search engines  
+Welcome to the enhanced version of the Search Engines library – a powerful Python tool for querying popular search engines such as Google, Bing, Yahoo, and more! 🌐
 
-_[Google](https://www.google.com)_  
-_[Bing](https://www.bing.com)_  
-_[Yahoo](https://search.yahoo.com)_  
-_[Duckduckgo](https://duckduckgo.com)_  
-_[Startpage](https://www.startpage.com)_  
-_[Aol](https://search.aol.com)_  
-_[Dogpile](https://www.dogpile.com)_  
-_[Ask](https://uk.ask.com)_  
-_[Mojeek](https://www.mojeek.com)_  
-_[Brave](https://search.brave.com/)_  
-_[Torch](http://xmh57jrzrnw6insl.onion/4a1f6b371c/search.cgi)_  
+## Features
 
-## Features  
+- **Multi-Engine Support:** Query Google, Bing, Yahoo, DuckDuckGo, Startpage, Aol, Dogpile, Ask, Mojeek, Brave, and even the Dark Web with Torch!
+- **Output Flexibility:** Easily generate output files in HTML, CSV, or JSON formats.
+- **Search Filters:** Refine your results using filters for URL, title, and text.
+- **Proxy Support:** Execute searches through HTTP and SOCKS proxies for enhanced privacy and control.
+- **Extensibility:** Effortlessly add new search engines by creating custom classes. Just subclass the `SearchEngine` and override a few methods.
+- **Python Compatibility:** Works seamlessly with both Python 2.7 and Python 3.x.
+- **Easy Installation:** Install the library with a single command: `$ pip install enhanced-search-engines`.
 
- - Creates output files (html, csv, json).  
- - Supports search filters (url, title, text).  
- - HTTP and SOCKS proxy support.  
- - Collects dark web links with Torch.  
- - Easy to add new search engines. You can add a new engine by creating a new class in `search_engines/engines/` and add it to the  `search_engines_dict` dictionary in `search_engines/engines/__init__.py`. The new class should subclass `SearchEngine`, and override the following methods: `_selectors`, `_first_page`, `_next_page`. 
- - Python2 - Python3 compatible.  
+## Requirements
 
-## Requirements  
+Ensure you have Python 2.7 - 3.x installed, along with the following dependencies:
+- [Requests](http://docs.python-requests.org/en/master/)
+- [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
-_Python 2.7 - 3.x_ with  
-_[Requests](http://docs.python-requests.org/en/master/)_ and  
-_[BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)_  
+## Installation
 
-## Installation  
-
-Run the setup file: `$ python setup.py install`.  
-Done!  
-
-## Usage  
-
-As a library:  
-
+Install the enhanced library using:
+```bash
+$ pip install enhanced-search-engines
 ```
-from search_engines import Google
+
+## Usage
+
+### As a Library:
+
+```python
+from enhanced_search_engines import Google
 
 engine = Google()
 results = engine.search("my query")
@@ -50,12 +39,14 @@ links = results.links()
 print(links)
 ```
 
-As a CLI script:  
+### As a CLI Script:
 
-```  
-$ python search_engines_cli.py -e google,bing -q "my query" -o json,print
+```bash
+$ enhanced-search -e google,bing -q "my query" -o json,print
 ```
 
-## Other versions  
+## Forked Project
 
- - [async-search-scraper](https://github.com/soxoj/async-search-scraper) A really cool asynchronous implementation, written by @soxoj   
+This fork exists because the original project seems inactive. We're dedicated to enhancing the library by incorporating new features and improvements. Notable additions include the ability to pass proxy information for search queries. Join us in making this tool even more robust and versatile!
+
+Feel free to explore the [repository](https://github.com/yourusername/enhanced-search-engines) for the latest updates and contribute to the project. Let's supercharge our searching capabilities together! 🚀✨
