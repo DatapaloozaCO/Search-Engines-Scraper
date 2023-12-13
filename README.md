@@ -45,6 +45,14 @@ print(links)
 $ enhanced-search -e google,bing -q "my query" -o json,print
 ```
 
+## Project History
+This project was originally developed by a talented group of contributors:
+
+@tasos-py - Tasos M Adamopoulos
+@nikolasj5 - Nikolas Makiya Vichi
+@csecht - Craig Echt
+@hnrkcode - Hnrkcode
+
 ## Forked Project
 
 This fork exists because the original project seems inactive. We're dedicated to enhancing the library by incorporating new features and improvements. Notable additions include the ability to pass proxy information for search queries. Join us in making this tool even more robust and versatile!
