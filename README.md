@@ -48,10 +48,10 @@ $ enhanced-search -e google,bing -q "my query" -o json,print
 ## Project History
 This project was originally developed by a talented group of contributors:
 
-@tasos-py - Tasos M Adamopoulos
-@nikolasj5 - Nikolas Makiya Vichi
-@csecht - Craig Echt
-@hnrkcode - Hnrkcode
+- @tasos-py - Tasos M Adamopoulos
+- @nikolasj5 - Nikolas Makiya Vichi
+- @csecht - Craig Echt
+- @hnrkcode - Hnrkcode
 
 ## Forked Project
 
